@@ -85,7 +85,7 @@ namespace LiveSplit.Bully
 
         public override XmlNode GetSettings(XmlDocument document) { return this.Settings.GetSettings(document); }
 
-        public override Control GetSettingsControl(LayoutMode mode) { return null/*this.Settings*/; }
+        public override Control GetSettingsControl(LayoutMode mode) { return this.Settings; }
 
         public override void SetSettings(XmlNode settings) { this.Settings.SetSettings(settings); }
 
